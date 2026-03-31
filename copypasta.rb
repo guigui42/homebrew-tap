@@ -5,21 +5,21 @@
 class Copypasta < Formula
   desc "Clean dark-themed website text for pasting into Outlook/Word"
   homepage "https://github.com/guigui42/copypasta"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/guigui42/copypasta/releases/download/v1.0.1/copypasta_darwin_amd64.tar.gz"
-    sha256 "af0983bbd3cd228a93cb35399d35d3e718c3d879c1947c2d86ee09e3d0ae0899"
+    url "https://github.com/guigui42/copypasta/releases/download/v1.0.2/copypasta_darwin_amd64.tar.gz"
+    sha256 "d1693aa3659fd148bfb796037b89403a6f33756e94ff5c627d18abb37e3bec54"
 
     define_method(:install) do
       bin.install "copypasta"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/guigui42/copypasta/releases/download/v1.0.1/copypasta_darwin_arm64.tar.gz"
-    sha256 "f9b03f675a3b1dd2c479a6dd4e02ecdbd8ae87d4e2118fe795c7b56aae23545d"
+    url "https://github.com/guigui42/copypasta/releases/download/v1.0.2/copypasta_darwin_arm64.tar.gz"
+    sha256 "1efacee0a60853a34fa25a189b8ee6d8bd98d93c71bbcc1d0d6d30acefebb59c"
 
     define_method(:install) do
       bin.install "copypasta"
