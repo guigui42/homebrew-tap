@@ -5,21 +5,21 @@
 class Customerpromptgenerator < Formula
   desc "Customer prompt generator"
   homepage "https://github.com/guigui42/CustomerPromptGenerator"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/guigui42/CustomerPromptGenerator/releases/download/v1.0.3/CustomerPromptGenerator_darwin_amd64.tar.gz"
-    sha256 "356711bf5c0251b0c70f45aa61a38e1b1901200fd2395d146b33b87ee3f80aea"
+    url "https://github.com/guigui42/CustomerPromptGenerator/releases/download/v1.0.4/CustomerPromptGenerator_darwin_amd64.tar.gz"
+    sha256 "e4b28e36989d3125ce6e449ac30cc87ff63d3b66feb8a08db394ed58211a596c"
 
     define_method(:install) do
       bin.install "customerpromptgenerator"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/guigui42/CustomerPromptGenerator/releases/download/v1.0.3/CustomerPromptGenerator_darwin_arm64.tar.gz"
-    sha256 "52e043c3bf2a4025eaa3bc4a53d1fe55f6bdefcd43ce05ff45d86d0ad0af491c"
+    url "https://github.com/guigui42/CustomerPromptGenerator/releases/download/v1.0.4/CustomerPromptGenerator_darwin_arm64.tar.gz"
+    sha256 "9318aaa1369cd06f7225654d236c63c889e0c14bd778281a9f20266123e5ac54"
 
     define_method(:install) do
       bin.install "customerpromptgenerator"
